@@ -1,0 +1,10 @@
+<p>
+  journal-entry works!
+</p>
+
+<div *ngFor="let journal of allTheJournals">
+  <a [routerLink]="['/journal', journal._id]">
+    <h1>{{journal.title}}</h1>
+  </a>
+  <h3>{{journal.date}}</h3>
+</div>
